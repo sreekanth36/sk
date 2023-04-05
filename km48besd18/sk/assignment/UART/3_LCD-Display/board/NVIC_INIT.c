@@ -1,0 +1,9 @@
+
+
+#include "myheader.h"
+
+void NVIC_INIT(void)
+{
+	NVIC_ISER0|=(0x1<<23);//ENABLING EXTI INTERRUPT HANDLER
+	NVIC_ISER1|=(0x1<<5);//ENABLING USART INTERRUPT HANDLER
+}
