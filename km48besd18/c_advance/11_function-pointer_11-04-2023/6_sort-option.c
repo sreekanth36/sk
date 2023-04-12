@@ -102,7 +102,7 @@ void sk2(int argc,char * argv[])
 int main(int argc,char *argv[])
 {
 	int sk1=argc;
-	void (*sk[4])(int,char *)={skri,skr,ski,sk2};
+	void (*sk[4])(int,char *s[])={skri,skr,ski,sk2};
 	if((strcmp(argv[1],"-r")==0) && (strcmp(argv[2],"-i")==0))
 	{
 		i=3;k=3,s=1;
