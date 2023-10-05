@@ -1,0 +1,16 @@
+
+CC=gcc
+
+all:main
+main:main.o add.o sub.o
+	$(CC) main.o add.o sub.o -o main
+main.o:main.c
+	$(CC) -c main.c
+add.o:add.c
+	$(CC) -c add.c
+sub.o:sub.c
+	$(CC) -c sub.c
+clean:
+	rm *.o main
+install:
+	cp main /usr/bin
